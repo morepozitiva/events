@@ -1,6 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
 *{
    box-sizing: border-box;
 }
+
 a, button{
    transition: all .3 ease-in;
+}
+
+body{
+   font: 400 22px 'Poppins', sans-serif;
+   color:#444;
+}
+
+.container{
+   max-width: 1170px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.box{
+   padding: 90px 0;
+   outline: 1px solid orange;
+}
+.box--padding-lg{
+   padding: 140px 0;
+}
+.box--bg-pink{
+   background-color: pink;
+}
+.box--bg-grey{
+   background-color: #eeeeee;
+}
+.box--bg-gradient{
+   background-image: linear-gradient(to bottom, #333339 50%, #fe00cc 100%);
 }
