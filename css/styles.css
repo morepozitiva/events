@@ -1,0 +1,6 @@
+*{
+   box-sizing: border-box;
+}
+a, button{
+   transition: all .3 ease-in;
+}
