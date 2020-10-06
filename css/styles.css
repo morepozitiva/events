@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 *{
 	box-sizing: border-box;
 }
 
 a, button{
-	transition: all .3 ease-in;
+	transition: all .3s ease-in;
 }
 
 a{
@@ -171,3 +171,36 @@ header .container{
 .text-purple{
 	color: #e71cb4;
 }
+.corse{
+	padding: 25px 0;
+	list-style: none;
+	font-size: 24px;
+	font-weight: 500;
+	column-count: 2;
+	column-gap: 30px;
+}
+.course__index{
+	font-weight: 700;
+	font-size: 44px;
+	display: inline-block;
+	margin: 0 25px;
+	line-height: 1.2;
+}
+.corse li{
+	display: flex;
+	padding: 25px 0;
+}
+
+.text-yellow{
+	color: yellow;
+}
+.text-salmon{
+	color: salmon;
+}
+.text-blue{
+	color: blue;
+}
+.text-gren{
+	color: green;
+}
+
