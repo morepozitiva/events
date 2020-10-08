@@ -42,6 +42,7 @@ body{
 }
 
 .box--bg-gradient{
+	color: #fff;
 	background-image: linear-gradient(to bottom, #333339 50%, #fe00cc 100%);
 }
 
@@ -54,7 +55,7 @@ h3{
 }
 
 h4{
-	font-size: 18px;
+	font-size: 30px;
 }
 
 h6{
@@ -183,12 +184,22 @@ header .container{
 	font-weight: 700;
 	font-size: 44px;
 	display: inline-block;
-	margin: 0 25px;
+	padding: 0 25px;
 	line-height: 1.2;
+	flex: 0 0 auto;
 }
+
+.course__index > i{
+margin-right: 25px;
+}
+
 .corse li{
 	display: flex;
 	padding: 25px 0;
+}
+
+.text-centr{
+	text-align: center;
 }
 
 .text-yellow{
@@ -204,3 +215,59 @@ header .container{
 	color: green;
 }
 
+.text-lg {
+	font-size:32px;
+	margin: 90px 0;
+}
+.text-sm{
+	font-size: 14px;
+	margin: 45px 0;
+}
+.people{
+	list-style: none;
+	padding: 0;
+	margin: 40px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.person{
+	padding: 20px 60px;
+	text-align: center;
+	max-width: 30%;
+}
+
+.person__name{
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.person__img{
+	border-radius: 10px;
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+	overflow: hidden;
+	margin: 20px auto;
+}
+.person__img img{
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.person__text{
+	font-size: 16px;
+}
+.person__img--round{
+	/* width: 360px;
+	height: 360px; */
+	border-radius: 50%;
+}
+.person--padding-sm{
+	padding: 20px;
+
+}
