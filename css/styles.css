@@ -20,13 +20,19 @@ body{
 	font-weight: 400;
 }
 
+@media screen and (max-width: 760px){
+	body{
+		font-size: 16px;
+	}
+}
+
 .container{
 	max-width: 1170px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
 .container--sm{
-	min-width: 750px;
+	max-width: 750px;
 }
 
 .box{
@@ -64,6 +70,12 @@ h4{
 
 h6{
 	font-size: 14px;
+}
+
+@media screen and (max-width: 760px){
+	h1,h2{
+		font-size: 42px;
+	}
 }
 
 header{
@@ -184,6 +196,13 @@ header .container{
 	column-count: 2;
 	column-gap: 30px;
 }
+
+@media screen and (max-width: 960px){
+	.corse{
+		column-count: 1;
+	}
+}
+
 .course__index{
 	font-weight: 700;
 	font-size: 44px;
@@ -200,6 +219,16 @@ margin-right: 25px;
 .corse li{
 	display: flex;
 	padding: 25px 0;
+}
+
+@media screen and (max-width: 576px){
+	.corse li{
+		flex-direction: column;
+	}
+	.course__index{
+		font-size: 32px;
+		padding: 0;
+	}
 }
 
 .text-centr{
@@ -223,6 +252,10 @@ margin-right: 25px;
 	font-size:32px;
 	margin: 90px 0;
 }
+
+@media screen and (max-width: 760px){
+	font-size: 14px;
+}
 .text-sm{
 	font-size: 14px;
 	margin: 45px 0;
@@ -236,10 +269,28 @@ margin-right: 25px;
 	justify-content: space-between;
 }
 
+@media screen and (max-width: 960px){
+	.people{
+		justify-content: space-around;
+	}
+}
+
 .person{
 	padding: 20px 60px;
 	text-align: center;
 	width: 33%;
+}
+
+@media screen and (max-width: 960px){
+	.person{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 760px){
+	.person{
+		width: 80%;
+	}
 }
 
 .person__name{
@@ -309,6 +360,42 @@ margin-right: 25px;
 	background-color: transparent;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 960px){
+	.countdown__item{
+		min-width: 120px;
+		min-height: 120px;
+		padding: 10px 20px 10px;
+		margin: 0 20px;
+	}
+
+	.countdown__num{
+		font-size: 50px;
+	}
+
+	.countdown__text{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 760px){
+	.countdown__item{
+		min-width: 160px;
+		min-height: 160px;
+		padding: 15px 30px 20px;
+		margin: 15px 35px;
+	}
+
+	.countdown__num{
+		font-size: 70px;
+	}
+
+	.countdown__text{
+		font-size: 14px;
+	}
+
+}
+
 .sponosors{
 	list-style: none;
 	display: flex;
@@ -348,5 +435,4 @@ margin-right: 25px;
 .social i{
 	margin: auto;
 }
-
 
