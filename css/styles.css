@@ -239,7 +239,7 @@ margin-right: 25px;
 .person{
 	padding: 20px 60px;
 	text-align: center;
-	max-width: 30%;
+	width: 33%;
 }
 
 .person__name{
