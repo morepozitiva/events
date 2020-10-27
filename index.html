@@ -160,7 +160,32 @@
                <h2>Contact Us</h2>
                <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
             </div>
-            <form action="" method="POST"></form>
+            <form action="" method="POST" class="contact-form" autocomplete="off">
+               <div class="contact-form__groupe groupe--1-2">
+                  <input class="contact-form__input" type="text" name="firstname" id="firstname">
+                  <label class="contact-form__label" for="firstname">First name</label>
+               </div>
+               <div class="contact-form__groupe groupe--1-2">
+                  <input class="contact-form__input" type="text" name="lastname" id="lastname">
+                  <label class="contact-form__label" for="lastname">Last name</label>
+               </div>
+               <div class="contact-form__groupe groupe--1-2">
+                  <input class="contact-form__input" type="email" name="email" id="email">
+                  <label class="contact-form__label" for="email">Email</label>
+               </div>
+               <div class="contact-form__groupe groupe--1-2">
+                  <input class="contact-form__input" type="url" name="website" id="website">
+                  <label class="contact-form__label" for="website">Website</label>
+               </div>
+               <div class="contact-form__groupe">
+                  <!-- <input class="contact-form__input contact-form__input--textarea" type="text" name="textarea" id="textarea"> -->
+                  <textarea name="textarea" id="textarea" class="contact-form__input" cols="30" rows="10"></textarea>
+                  <label class="contact-form__label contact-form__label--textarea" for="textarea">Message</label>
+               </div>
+               <button type="submit" class="btn btn--silver">
+                  send message
+               </button>
+            </form>
          </div>
       </section>
    </main>
@@ -170,6 +195,12 @@
          <h3>Newsletter</h3>
          <p>If you would like to hear first and to receive updates please subscribe to our newsletter.</p>
       </div>
+      <form action="" method="POST" class="subscride-form">
+         <input type="email" name="email" placeholder="email address" class="subscride-form__input">
+         <button type="submit" class="btn">
+            Subscribe
+         </button>
+      </form>
       <ul class="socials">
          <div class="social"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></i></a>
          </div>
