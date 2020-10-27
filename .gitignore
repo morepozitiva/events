@@ -1,3 +1,4 @@
 # Игнорируем все файлы psd
 node_modules
+2
 *.psd
