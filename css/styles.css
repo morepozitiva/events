@@ -201,6 +201,11 @@ header .container{
 	color: #e71cb4;
 }
 
+.btn--right{
+	position: relative;
+	left: 60%;
+}
+
 .text-purple{
 	color: #e71cb4;
 }
