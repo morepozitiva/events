@@ -6,18 +6,25 @@
    <title>Beetroot Academy Events</title>
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/menu.css">
    <link rel="shortcut icon" href="favicon.png" type="image/png">
 </head>
 <body>
    <header>
       <div class="container">
          <a href="#" class="logo">Events</a>
+         <input type="checkbox" name="toggler-input" id="toggler-input">
+         <label id="toggler" for="toggler-input">
+            <span></span>
+            <span></span>
+            <span></span>
+         </label>
          <nav>
             <ul>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Competitors</a></li>
-               <li><a href="#">Jury</a></li>               
-               <li><a href="#">Contact Us</a></li>              
+               <li><a href="#about" onclick="closeMenu()">About</a></li>
+               <li><a href="#competitors" onclick="closeMenu()">Competitors</a></li>
+               <li><a href="#jJury" onclick="closeMenu()">Jury</a></li>               
+               <li><a href="#contact" onclick="closeMenu()">Contact Us</a></li>              
             </ul>
          </nav>
       </div>
@@ -30,7 +37,7 @@
             <a href="#" class="btn btn--transparent">Download Our Case Study</a>
          </div>
       </section>
-      <section class="box box--padding-lg">
+      <section class="box box--padding-lg" id="about">
          <div class="container">
             <h2 class="text-purple">Design Battles</h2>
             <div class="text-lg">
@@ -55,7 +62,7 @@
          <a href="#" class="btn btn--lg">Download Our Case Study</a>   
          </div>
       </section>
-      <section class="box box--padding-lg box--bg-gradient">
+      <section class="box box--padding-lg box--bg-gradient" id="competitors">
          <div class="container">
             <div class="text-centr">
                <h2>They already said Battles</h2>
@@ -129,7 +136,7 @@
            </ul>
          </div>
       </section>
-      <section class="box box--bg-pink">
+      <section class="box box--bg-pink" id="jury">
          <div class="container">
             <div class="text-centr">
                <h2>Jury 2017</h2>
@@ -154,7 +161,7 @@
       
          </div>
       </section>
-      <section class="box">
+      <section class="box" id="contact">
          <div class="container container--sm">
             <div class="text-centr">
                <h2>Contact Us</h2>
@@ -214,5 +221,10 @@
    </div>
    </footer>
    <script src="https://kit.fontawesome.com/25fc6d5683.js" crossorigin="anonymous"></script>
+   <script>
+      function closeMenu() {
+         document.querySelector('#toggler').click();
+      }
+   </script>
 </body>
 </html>
