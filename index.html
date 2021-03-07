@@ -5,226 +5,274 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Beetroot Academy Events</title>
    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="css/styles.css">
    <link rel="stylesheet" href="css/menu.css">
    <link rel="shortcut icon" href="favicon.png" type="image/png">
 </head>
 <body>
-   <header>
-      <div class="container">
-         <a href="#" class="logo">Events</a>
-         <input type="checkbox" name="toggler-input" id="toggler-input">
-         <label id="toggler" for="toggler-input">
-            <span></span>
-            <span></span>
-            <span></span>
-         </label>
-         <nav>
-            <ul>
-               <li><a href="#about" onclick="closeMenu()">About</a></li>
-               <li><a href="#competitors" onclick="closeMenu()">Competitors</a></li>
-               <li><a href="#jJury" onclick="closeMenu()">Jury</a></li>               
-               <li><a href="#contact" onclick="closeMenu()">Contact Us</a></li>              
-            </ul>
-         </nav>
-      </div>
-   </header>
-   <main>
-      <section class="box box--padding-lg hero">
-         <div>
-            <h1 class="hero__title">Are you ready for the Battle?</h1>
-            <p class="hero__text">The clash between graphic designers</p>
-            <a href="#" class="btn btn--transparent">Download Our Case Study</a>
-         </div>
-      </section>
-      <section class="box box--padding-lg" id="about">
+   <div id="app">
+      <header class="animate" data-animate="fadeInDown">
          <div class="container">
-            <h2 class="text-purple">Design Battles</h2>
-            <div class="text-lg">
-               <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.
-               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit
-               amet aliquam vel, ullamcorper sit amet ligula.</p>
+            <a href="#" class="logo">Events</a>
+            <input type="checkbox" name="toggler-input" id="toggler-input">
+            <label id="toggler" for="toggler-input">
+               <span></span>
+               <span></span>
+               <span></span>
+            </label>
+            <nav>
+               <ul>
+                  <li><a href="#about" onclick="closeMenu()">About</a></li>
+                  <li><a href="#competitors" onclick="closeMenu()">Competitors</a></li>
+                  <li><a href="#jJury" onclick="closeMenu()">Jury</a></li>               
+                  <li><a href="#contact" onclick="closeMenu()">Contact Us</a></li>              
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <main>
+         <section class="box box--padding-lg hero">
+            <div class="animate" data-animate="fadeInUp">
+               <h1 class="hero__title">Are you ready for the Battle?</h1>
+               <p class="hero__text">The clash between graphic designers</p>
+               <a href="#" class="btn btn--transparent">Download Our Case Study</a>
             </div>
-            
-            <h3>What is the course of the Battles?</h3>
-
-            <ul class="corse">
-               <li><span class="course__index text-yellow"><i class="fas fa-chevron-right"></i>01.</span><span>Cras ultricies ligula sed mag.</span></li>
-               <li><span class="course__index text-salmon"><i class="fas fa-chevron-right"></i>02.</span><span>Pellentesque in ipsum id orci porta dapibus.</span></li>
-               <li><span class="course__index text-blue"><i class="fas fa-chevron-right"></i>03.</span><span>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</span></li>
-               <li><span class="course__index text-gren"><i class="fas fa-chevron-right"></i>04.</span><span>Cras ultricies ligula sed magna dictum portaurabitur arcu.</span></li>
-               <li><span class="course__index text-purple"><i class="fas fa-chevron-right"></i>05.</span><span>Proin eget tortor risus.</span></li>
-               <li><span class="course__index text-yellow"><i class="fas fa-chevron-right"></i>06.</span><span>Nulla quis lorem ut libero malesuada feugiat.</span></li>
-            </ul>
-            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
-           <h4>Submissions starts on 10/12/2017 and end on 11/12/2017</h4>
-         <div class="text-sm"><p>Nulla quis lorem ut libero malesuada feugiat eget tincidunt nibh pulvinar.</p></div>
-         <a href="#" class="btn btn--lg">Download Our Case Study</a>   
-         </div>
-      </section>
-      <section class="box box--padding-lg box--bg-gradient" id="competitors">
-         <div class="container">
+         </section>
+         <section class="box box--padding-lg" id="about">
+            <div class="container">
+               <h2 class="text-purple animate" data-animate="fadeInUp">Design Battles</h2>
+               <div class="text-lg">
+                  <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.
+                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit
+                  amet aliquam vel, ullamcorper sit amet ligula.</p>
+               </div>
+               
+               <h3>What is the course of the Battles?</h3>
+   
+               <ul class="corse">
+                  <li><span class="course__index text-yellow"><i class="fas fa-chevron-right"></i>01.</span><span>Cras ultricies ligula sed mag.</span></li>
+                  <li><span class="course__index text-salmon"><i class="fas fa-chevron-right"></i>02.</span><span>Pellentesque in ipsum id orci porta dapibus.</span></li>
+                  <li><span class="course__index text-blue"><i class="fas fa-chevron-right"></i>03.</span><span>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</span></li>
+                  <li><span class="course__index text-gren"><i class="fas fa-chevron-right"></i>04.</span><span>Cras ultricies ligula sed magna dictum portaurabitur arcu.</span></li>
+                  <li><span class="course__index text-purple"><i class="fas fa-chevron-right"></i>05.</span><span>Proin eget tortor risus.</span></li>
+                  <li><span class="course__index text-yellow"><i class="fas fa-chevron-right"></i>06.</span><span>Nulla quis lorem ut libero malesuada feugiat.</span></li>
+               </ul>
+               <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+              <h4>Submissions starts on 10/12/2017 and end on 11/12/2017</h4>
+            <div class="text-sm"><p>Nulla quis lorem ut libero malesuada feugiat eget tincidunt nibh pulvinar.</p></div>
+            <a href="#" class="btn btn--lg">Download Our Case Study</a>   
+            </div>
+         </section>
+         <section class="box box--padding-lg box--bg-gradient" id="competitors">
+            <div class="container">
+               <div class="text-centr">
+                  <h2>They already said Battles</h2>
+                  <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Estibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+               </div>
+               <!-- swiper -->
+              <!-- Slider main container -->
+               <div class="swiper-container">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                     <!-- Slides -->
+                     <div class="swiper-slide">
+                        <div class="person">
+                           <div class="person__img"><img src="img/alex-perez.jpg" alt="Alex Perez"></div>
+                           <div class="person__name">Alex Perez</div>
+                           <div class="person__text">Creative Director at Amazing Game</div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="person">
+                           <div class="person__img"><img src="img/ayo-ogunseinde.jpg" alt="Ayo Ogunseinde"></div>
+                           <div class="person__name">Ayo Ogunseinde</div>
+                           <div class="person__text">Creative Director at Amazing Game</div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="person">
+                           <div class="person__img"><img src="img/joe-gardner.jpg" alt="Joe Gardner"></div>
+                           <div class="person__name">Joe Gardner</div>
+                           <div class="person__text">Creative Director at Amazing Game</div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="person">
+                           <div class="person__img"><img src="img/kyle-loftus.jpg" alt="Kyle Loftus"></div>
+                           <div class="person__name">Kyle Loftus</div>
+                           <div class="person__text">Creative Director at Amazing Game</div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="person">
+                           <div class="person__img"><img src="img/matheus-ferrero.jpg" alt="Matheus Ferrero"></div>
+                           <div class="person__name">Matheus Ferrero</div>
+                           <div class="person__text">Creative Director at Amazing Game</div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="person">
+                           <div class="person__img"><img src="img/pete-beldivs.jpg" alt="Pete Beldivs"></div>
+                           <div class="person__name">Pete Beldivs</div>
+                           <div class="person__text">Creative Director at Amazing Game</div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+   
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+               </div>
+               <!-- /swiper -->
+               <!-- <ul class="people">
+                  <li class="person">
+                     <div class="person__img"><img src="img/alex-perez.jpg" alt="Alex Perez"></div>
+                     <div class="person__name">Alex Perez</div>
+                     <div class="person__text">Creative Director at Amazing Game</div>
+                  </li>
+                  <li class="person">
+                     <div class="person__img"><img src="img/ayo-ogunseinde.jpg" alt="Ayo Ogunseinde"></div>
+                     <div class="person__name">Ayo Ogunseinde</div>
+                     <div class="person__text">Creative Director at Amazing Game</div>
+                  </li>
+                  <li class="person">
+                     <div class="person__img"><img src="img/joe-gardner.jpg" alt="Joe Gardner"></div>
+                     <div class="person__name">Joe Gardner</div>
+                     <div class="person__text">Creative Director at Amazing Game</div>
+                  </li>
+                  <li class="person">
+                     <div class="person__img"><img src="img/kyle-loftus.jpg" alt="Kyle Loftus"></div>
+                     <div class="person__name">Kyle Loftus</div>
+                     <div class="person__text">Creative Director at Amazing Game</div>
+                  </li>
+                  <li class="person">
+                     <div class="person__img"><img src="img/matheus-ferrero.jpg" alt="Matheus Ferrero"></div>
+                     <div class="person__name">Matheus Ferrero</div>
+                     <div class="person__text">Creative Director at Amazing Game</div>
+                  </li>
+                  <li class="person">
+                     <div class="person__img"><img src="img/pete-bellis.jpg" alt="Pete Bellis"></div>
+                     <div class="person__name">Pete Bellis</div>
+                     <div class="person__text">Creative Director at Amazing Game</div>
+                  </li>
+               </ul> -->
             <div class="text-centr">
-               <h2>They already said Battles</h2>
-               <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Estibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+                <h2>Countdown</h2>
             </div>
-            <ul class="people">
-               <li class="person">
-                  <div class="person__img"><img src="img/alex-perez.jpg" alt="Alex Perez"></div>
-                  <div class="person__name">Alex Perez</div>
-                  <div class="person__text">Creative Director at Amazing Game</div>
-               </li>
-               <li class="person">
-                  <div class="person__img"><img src="img/ayo-ogunseinde.jpg" alt="Ayo Ogunseinde"></div>
-                  <div class="person__name">Ayo Ogunseinde</div>
-                  <div class="person__text">Creative Director at Amazing Game</div>
-               </li>
-               <li class="person">
-                  <div class="person__img"><img src="img/joe-gardner.jpg" alt="Joe Gardner"></div>
-                  <div class="person__name">Joe Gardner</div>
-                  <div class="person__text">Creative Director at Amazing Game</div>
-               </li>
-               <li class="person">
-                  <div class="person__img"><img src="img/kyle-loftus.jpg" alt="Kyle Loftus"></div>
-                  <div class="person__name">Kyle Loftus</div>
-                  <div class="person__text">Creative Director at Amazing Game</div>
-               </li>
-               <li class="person">
-                  <div class="person__img"><img src="img/matheus-ferrero.jpg" alt="Matheus Ferrero"></div>
-                  <div class="person__name">Matheus Ferrero</div>
-                  <div class="person__text">Creative Director at Amazing Game</div>
-               </li>
-               <li class="person">
-                  <div class="person__img"><img src="img/pete-bellis.jpg" alt="Pete Bellis"></div>
-                  <div class="person__name">Pete Bellis</div>
-                  <div class="person__text">Creative Director at Amazing Game</div>
-               </li>
-            </ul>
+            <countdown :todate="'2021-04-01 00:00:00'"></countdown>
+            </div>
+         </section>
+         <section class="box">
+            <div class="container">
+               <div class="text-centr">
+                  <h2 class="animate" data-animate="fadeInUp">Sponsorship</h2>
+              </div>
+              <ul class="sponosors">
+                 <li class="sponsor animate" data-animate="fadeInLeft" data-delay="1"><img src="img/clients-01.png" alt="speckyboy"></li>
+                 <li class="sponsor animate" data-animate="fadeInLeft"><img src="img/clients-02.png" alt="DWB"></li>
+                 <li class="sponsor animate" data-animate="fadeInRight"><img src="img/clients-03.png" alt="Webdisignledger.com"></li>
+                 <li class="sponsor animate" data-animate="fadeInRight" data-delay="1"><img src="img/clients-04.png" alt="InstantShift"></li>
+              </ul>
+            </div>
+         </section>
+         <section class="box box--bg-pink" id="jury">
+            <div class="container">
+               <div class="text-centr">
+                  <h2>Jury 2017</h2>
+               </div>
+               <ul class="people">
+                  <li class="person person--padding-sm">
+                     <div class="person__img person__img--round"><img src="img/sawyer-bengtson.jpg" alt="Sawyer Bengtson"></div>
+                     <div class="person__name">Sawyer Bengtson</div>
+                     <div class="person__text">Creative Director at Amazing Game</div>
+                  </li>
+                  <li class="person person--padding-sm">
+                     <div class="person__img person__img--round"><img src="img/tanja-heffner.jpg" alt="Tanja Heffner"></div>
+                     <div class="person__name">Tanja Heffner</div>
+                     <div class="person__text">Creative Director at Amazing Game</div>
+                  </li>
+                  <li class="person person--padding-sm">
+                     <div class="person__img person__img--round"><img src="img/teddy-petrosky.jpg" alt="Teddy Petrosky"></div>
+                     <div class="person__name">Teddy Petrosky</div>
+                     <div class="person__text">Creative Director at Amazing Game</div>
+                  </li>
+               </ul>
+         
+            </div>
+         </section>
+         <section class="box" id="contact">
+            <div class="container container--sm">
+               <div class="text-centr">
+                  <h2>Contact Us</h2>
+                  <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+               </div>
+               <form action="" method="POST" class="contact-form" autocomplete="off">
+                  <div class="contact-form__groupe groupe--1-2">
+                     <input class="contact-form__input" type="text" name="firstname" id="firstname">
+                     <label class="contact-form__label" for="firstname">First name</label>
+                  </div>
+                  <div class="contact-form__groupe groupe--1-2">
+                     <input class="contact-form__input" type="text" name="lastname" id="lastname">
+                     <label class="contact-form__label" for="lastname">Last name</label>
+                  </div>
+                  <div class="contact-form__groupe groupe--1-2">
+                     <input class="contact-form__input" type="email" name="email" id="email">
+                     <label class="contact-form__label" for="email">Email</label>
+                  </div>
+                  <div class="contact-form__groupe groupe--1-2">
+                     <input class="contact-form__input" type="url" name="website" id="website">
+                     <label class="contact-form__label" for="website">Website</label>
+                  </div>
+                  <div class="contact-form__groupe">
+                     <!-- <input class="contact-form__input contact-form__input--textarea" type="text" name="textarea" id="textarea"> -->
+                     <textarea name="textarea" id="textarea" class="contact-form__input" cols="30" rows="10"></textarea>
+                     <label class="contact-form__label contact-form__label--textarea" for="textarea">Message</label>
+                  </div>
+                  <button type="submit" class="btn btn--silver btn--right">
+                     send message
+                  </button>
+               </form>
+            </div>
+         </section>
+      </main>
+      <footer class="box box--bg-grey">
+      <div class="container container--sm">
          <div class="text-centr">
-             <h2>Countdown</h2>
+            <h3>Newsletter</h3>
+            <p>If you would like to hear first and to receive updates please subscribe to our newsletter.</p>
          </div>
-         <ul class="countdown">
-         <li class="countdown__item">
-            <div class="countdown__num">37</div>
-            <div class="countdown__text">days</div>
-         </li>
-         <li class="countdown__item">
-            <div class="countdown__num">13</div>
-            <div class="countdown__text">hours</div>
-         </li>
-         <li class="countdown__item">
-            <div class="countdown__num">25</div>
-            <div class="countdown__text">minutes</div>
-         </li>
-         <li class="countdown__item">
-            <div class="countdown__num">46</div>
-            <div class="countdown__text">seconds</div>
-         </li>
-      </ul>
-         </div>
-      </section>
-      <section class="box">
-         <div class="container">
-            <div class="text-centr">
-               <h2>Sponsorship</h2>
-           </div>
-           <ul class="sponosors">
-              <li class="sponsor"><img src="img/clients-01.png" alt="speckyboy"></li>
-              <li class="sponsor"><img src="img/clients-02.png" alt="DWB"></li>
-              <li class="sponsor"><img src="img/clients-03.png" alt="Webdisignledger.com"></li>
-              <li class="sponsor"><img src="img/clients-04.png" alt="InstantShift"></li>
-           </ul>
-         </div>
-      </section>
-      <section class="box box--bg-pink" id="jury">
-         <div class="container">
-            <div class="text-centr">
-               <h2>Jury 2017</h2>
+         <form @submit.prevent="subscribe()" method="POST" class="subscride-form">
+            <input
+               v-model="email"
+               type="email" 
+               name="email" 
+               placeholder="email address" 
+               class="subscride-form__input">
+            <button type="submit" class="btn">
+               Subscribe
+            </button>
+         </form>
+         <ul class="socials">
+            <div class="social"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></i></a>
             </div>
-            <ul class="people">
-               <li class="person person--padding-sm">
-                  <div class="person__img person__img--round"><img src="img/sawyer-bengtson.jpg" alt="Sawyer Bengtson"></div>
-                  <div class="person__name">Sawyer Bengtson</div>
-                  <div class="person__text">Creative Director at Amazing Game</div>
-               </li>
-               <li class="person person--padding-sm">
-                  <div class="person__img person__img--round"><img src="img/tanja-heffner.jpg" alt="Tanja Heffner"></div>
-                  <div class="person__name">Tanja Heffner</div>
-                  <div class="person__text">Creative Director at Amazing Game</div>
-               </li>
-               <li class="person person--padding-sm">
-                  <div class="person__img person__img--round"><img src="img/teddy-petrosky.jpg" alt="Teddy Petrosky"></div>
-                  <div class="person__name">Teddy Petrosky</div>
-                  <div class="person__text">Creative Director at Amazing Game</div>
-               </li>
-            </ul>
-      
-         </div>
-      </section>
-      <section class="box" id="contact">
-         <div class="container container--sm">
-            <div class="text-centr">
-               <h2>Contact Us</h2>
-               <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+            <div class="social"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a>
             </div>
-            <form action="" method="POST" class="contact-form" autocomplete="off">
-               <div class="contact-form__groupe groupe--1-2">
-                  <input class="contact-form__input" type="text" name="firstname" id="firstname">
-                  <label class="contact-form__label" for="firstname">First name</label>
-               </div>
-               <div class="contact-form__groupe groupe--1-2">
-                  <input class="contact-form__input" type="text" name="lastname" id="lastname">
-                  <label class="contact-form__label" for="lastname">Last name</label>
-               </div>
-               <div class="contact-form__groupe groupe--1-2">
-                  <input class="contact-form__input" type="email" name="email" id="email">
-                  <label class="contact-form__label" for="email">Email</label>
-               </div>
-               <div class="contact-form__groupe groupe--1-2">
-                  <input class="contact-form__input" type="url" name="website" id="website">
-                  <label class="contact-form__label" for="website">Website</label>
-               </div>
-               <div class="contact-form__groupe">
-                  <!-- <input class="contact-form__input contact-form__input--textarea" type="text" name="textarea" id="textarea"> -->
-                  <textarea name="textarea" id="textarea" class="contact-form__input" cols="30" rows="10"></textarea>
-                  <label class="contact-form__label contact-form__label--textarea" for="textarea">Message</label>
-               </div>
-               <button type="submit" class="btn btn--silver btn--right">
-                  send message
-               </button>
-            </form>
-         </div>
-      </section>
-   </main>
-   <footer class="box box--bg-grey">
-   <div class="container container--sm">
-      <div class="text-centr">
-         <h3>Newsletter</h3>
-         <p>If you would like to hear first and to receive updates please subscribe to our newsletter.</p>
+            <div class="social"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="social"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+         </ul>
       </div>
-      <form action="" method="POST" class="subscride-form">
-         <input type="email" name="email" placeholder="email address" class="subscride-form__input">
-         <button type="submit" class="btn">
-            Subscribe
-         </button>
-      </form>
-      <ul class="socials">
-         <div class="social"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></i></a>
-         </div>
-         <div class="social"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a>
-         </div>
-         <div class="social"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-         </div>
-         <div class="social"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a>
-         </div>
-      </ul>
+      </footer>
    </div>
-   </footer>
    <script src="https://kit.fontawesome.com/25fc6d5683.js" crossorigin="anonymous"></script>
-   <script>
-      function closeMenu() {
-         document.querySelector('#toggler').click();
-      }
-   </script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/vue@next"></script>
+   <script src="js/app.js"></script>
+   <script src="js/custom.js"></script>
 </body>
 </html>
